@@ -7,6 +7,7 @@ if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 Write-Host "Script executed with administrative privileges. Proceeding with installation."
 
 # Define paths
+$toolsFolder = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Tool\"
 $baseFolder = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Comp\Fusion Pixel Studios"
 $nmcFolder = "$baseFolder\The New Macro Creator"
 $filesFolder = "$nmcFolder\files"
@@ -17,6 +18,7 @@ $luaModules = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Modules
 $fileDetails = @(
     @{ID = "1K15w41DMZVRDXFA9hKRS88jMIRn7bQnS"; Path = "$nmcFolder\Macro Creator.lua"},
     @{ID = "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B"; Path = "$nmcFolder\Change Macro Type.lua"},
+    @{ID = "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B"; Path = "$toolsFolder\Change Macro Type.lua"},
     @{ID = "1d8GPLxKMYwSZy_dnKXZi7KZUwf6sJ02E"; Path = "$scriptsFolder\QMap QuickEdit.lua"},
     @{ID = "1iLDGt7MQUxJR6G11RNXvQr-6YMMmWjXm"; Path = "$luaModules\devmode.lua"}
 )
