@@ -9,11 +9,12 @@ fi
 echo "Script executed with administrative privileges. Proceeding with installation."
 
 # Define paths
-baseFolder="/usr/local/share/blackmagic-design/davinci-resolve/fusion/scripts/comp/Fusion Pixel Studios"
+$toolsFolder="/opt/resolve/Fusion/Scripts/Tools"
+baseFolder="/opt/resolve/Fusion/Scripts/Comp/Fusion Pixel Studios"
 nmcFolder="$baseFolder/The New Macro Creator"
 filesFolder="$nmcFolder/files"
 scriptsFolder="$filesFolder/scripts"
-luaModules="/usr/local/share/blackmagic-design/davinci-resolve/fusion/modules/lua"
+luaModules="/opt/resolve/Fusion/Modules/Lua"
 
 # Define file download details
 fileDetails=(
@@ -34,6 +35,7 @@ ensure_folder() {
 }
 
 # Ensure all required folders exist
+ensure_folder "$toolsFolder"
 ensure_folder "$baseFolder"
 ensure_folder "$nmcFolder"
 ensure_folder "$filesFolder"
