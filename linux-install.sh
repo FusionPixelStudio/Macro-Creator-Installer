@@ -35,12 +35,12 @@ ensure_folder() {
 }
 
 # Ensure all required folders exist
-ensure_folder "$toolsFolder"
 ensure_folder "$baseFolder"
 ensure_folder "$nmcFolder"
 ensure_folder "$filesFolder"
 ensure_folder "$scriptsFolder"
 ensure_folder "$luaModules"
+ensure_folder "$toolsFolder"
 
 # Download files
 echo "Downloading files..."
