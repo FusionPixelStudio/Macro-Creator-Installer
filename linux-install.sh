@@ -32,10 +32,10 @@ luaModules="$scriptsFolder/Modules/Lua"
 
 # Define file download details
 fileDetails=(
-    "1K15w41DMZVRDXFA9hKRS88jMIRn7bQnS:$nmcFolder/Macro_Creator.lua"
-    "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B:$nmcFolder/Change_Macro_Type.lua"
-    "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B:$toolsFolder/Change_Macro_Type.lua"
-    "1d8GPLxKMYwSZy_dnKXZi7KZUwf6sJ02E:$filesScriptsFolder/QMap_QuickEdit.lua"
+    "1K15w41DMZVRDXFA9hKRS88jMIRn7bQnS:$nmcFolder/Macro Creator.lua"
+    "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B:$nmcFolder/Change Macro Type.lua"
+    "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B:$toolsFolder/Change Macro Type.lua"
+    "1d8GPLxKMYwSZy_dnKXZi7KZUwf6sJ02E:$filesScriptsFolder/QMap QuickEdit.lua"
     "1iLDGt7MQUxJR6G11RNXvQr-6YMMmWjXm:$luaModules/devmode.lua"
 )
 
