@@ -36,7 +36,8 @@ fileDetails=(
     "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B:$nmcFolder/Change Macro Type.lua"
     "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B:$toolsFolder/Change Macro Type.lua"
     "1d8GPLxKMYwSZy_dnKXZi7KZUwf6sJ02E:$filesScriptsFolder/QMap QuickEdit.lua"
-    "1iLDGt7MQUxJR6G11RNXvQr-6YMMmWjXm:$luaModules/devmode.lua"
+    "1iLDGt7MQUxJR6G11RNXvQr-6YMMmWjXm:$luaModules/devmode.lua",
+    "1BARwV3JTfsXvHZ942My1K6UPzMZbyhkN:$luaModules/HTTP.lua"
 )
 
 # Function to ensure a folder exists
