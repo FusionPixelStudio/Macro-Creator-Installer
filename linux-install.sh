@@ -27,7 +27,7 @@ toolsFolder="$scriptsFolder/Scripts/Tools"
 baseFolder="$scriptsFolder/Scripts/Comp/Fusion Pixel Studios"
 nmcFolder="$baseFolder/The New Macro Creator"
 filesFolder="$nmcFolder/files"
-filesScriptsFolder="$nmcFolder/scripts/files"
+filesScriptsFolder="$nmcFolder/files/scripts"
 luaModules="$scriptsFolder/Modules/Lua"
 
 # Define file download details
