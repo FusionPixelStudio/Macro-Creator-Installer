@@ -9,8 +9,8 @@ fi
 echo "Script executed with administrative privileges. Proceeding with installation."
 
 # Define paths
-baseFolder="/usr/local/share/blackmagic-design/davinci-resolve/fusion/scripts/comp/fusion-pixel-studios"
-nmcFolder="$baseFolder/the-new-macro-creator"
+baseFolder="/usr/local/share/blackmagic-design/davinci-resolve/fusion/scripts/comp/Fusion Pixel Studios"
+nmcFolder="$baseFolder/The New Macro Creator"
 filesFolder="$nmcFolder/files"
 scriptsFolder="$filesFolder/scripts"
 luaModules="/usr/local/share/blackmagic-design/davinci-resolve/fusion/modules/lua"
