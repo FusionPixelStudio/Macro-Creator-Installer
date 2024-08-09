@@ -9,12 +9,12 @@ fi
 echo Script executed with administrative privileges. Proceeding with installation.
 
 # Define paths
-toolsFolder=LibraryApplication SupportBlackmagic DesignDaVinci ResolveFusionScriptsTool
-baseFolder=LibraryApplication SupportBlackmagic DesignDaVinci ResolveFusionScriptsCompFusion Pixel Studios
-nmcFolder=$baseFolderThe New Macro Creator
-filesFolder=$nmcFolderfiles
-scriptsFolder=$filesFolderscripts
-luaModules=LibraryApplication SupportBlackmagic DesignDaVinci ResolveFusionModulesLua
+toolsFolder="Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Tool"
+baseFolder="Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Comp/Fusion Pixel Studios"
+nmcFolder="$baseFolder/The New Macro Creator"
+filesFolder="$nmcFolder/files"
+scriptsFolder="$filesFolder/scripts"
+luaModules="Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Modules/Lua"
 
 # Define file download details
 fileDetails=(
