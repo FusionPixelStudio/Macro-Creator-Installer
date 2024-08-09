@@ -20,8 +20,10 @@ elif [ -d "$defaultPath2" ]; then
     scriptsFolder="$defaultPath2"
     luaModules="/home/resolve/Fusion/Modules/Lua"
 else
-    read -p "Neither $defaultPath1 nor $defaultPath2 exists. Please enter the path to your Universal DaVinci Resolve Scripts Folder: " userPath
+    read -p "Neither $defaultPath1 nor $defaultPath2 exists. Please enter the path to your Universal DaVinci Resolve Fusion Scripts Folder: " userPath
     scriptsFolder="$userPath"
+     read -p "Please enter the path to your Universal DaVinci Resolve Fusion Folder: " userPath
+     luaModules="$userPath"
 fi
 
 # Define folders based on the determined path
