@@ -55,6 +55,7 @@ ensure_folder "$filesFolder"
 ensure_folder "$scriptsFolder"
 ensure_folder "$luaModules"
 ensure_folder "$toolsFolder"
+ensure_folder "$filesScriptsFolder"
 
 # Download files
 echo "Downloading files..."
