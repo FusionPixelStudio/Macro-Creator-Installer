@@ -9,28 +9,25 @@ fi
 echo "Script executed with administrative privileges. Proceeding with installation."
 
 # Define default paths
-defaultPath1="/opt/resolve/Fusion/Scripts"
-defaultPath2="/home/resolve/Fusion/Scripts"
+defaultPath1="/opt/resolve/Fusion"
+defaultPath2="/home/resolve/Fusion"
 
 # Determine the correct path
 if [ -d "$defaultPath1" ]; then
     scriptsFolder="$defaultPath1"
-    luaModules="/opt/resolve/Fusion/Modules/Lua"
 elif [ -d "$defaultPath2" ]; then
     scriptsFolder="$defaultPath2"
-    luaModules="/home/resolve/Fusion/Modules/Lua"
 else
-    read -p "Neither $defaultPath1 nor $defaultPath2 exists. Please enter the path to your Universal DaVinci Resolve Fusion Scripts Folder: " userPath
+    read -p "Neither $defaultPath1 nor $defaultPath2 exists. Please enter the path to your Universal DaVinci Resolve Fusion Folder: " userPath
     scriptsFolder="$userPath"
-     read -p "Please enter the path to your Universal DaVinci Resolve Fusion Folder: " userPath
-     luaModules="$userPath"
 fi
 
 # Define folders based on the determined path
-toolsFolder="$scriptsFolder/Tools"
-baseFolder="$scriptsFolder/Comp/Fusion Pixel Studios"
+toolsFolder="$scriptsFolder/Scripts/Tools"
+baseFolder="$scriptsFolder/Scripts/Comp/Fusion Pixel Studios"
 nmcFolder="$baseFolder/The New Macro Creator"
 filesFolder="$nmcFolder/files"
+luaModules="$scriptsFolder/Modules/Lua"
 
 # Define file download details
 fileDetails=(
