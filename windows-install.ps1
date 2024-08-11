@@ -7,7 +7,7 @@ if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 Write-Host "Script executed with administrative privileges. Proceeding with installation."
 
 # Define paths
-$toolsFolder = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Tool\"
+$toolsFolder = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Tool"
 $baseFolder = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Comp\Fusion Pixel Studios"
 $nmcFolder = "$baseFolder\The New Macro Creator"
 $filesFolder = "$nmcFolder\files"
