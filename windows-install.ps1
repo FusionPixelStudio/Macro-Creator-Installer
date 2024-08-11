@@ -48,7 +48,7 @@ foreach ($file in $fileDetails) {
     $filePath = $file.Path
     $url = "https://drive.google.com/uc?export=download&id=$fileId"
     
-    Write-Output "Downloading file from: $url"
+    Write-Output "Downloading file"
     Write-Output "Saving to: $filePath"
     
     # Perform download
