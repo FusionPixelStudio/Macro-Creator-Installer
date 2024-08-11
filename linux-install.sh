@@ -66,7 +66,7 @@ for fileDetail in "${fileDetails[@]}"; do
     filePath=$(echo "$fileDetail" | cut -d':' -f2)
     url="https://drive.google.com/uc?export=download&id=$fileId"
 
-    echo "Downloading file from: $url"
+    echo "Downloading file"
     echo "Saving to: $filePath"
     
     # Perform download
