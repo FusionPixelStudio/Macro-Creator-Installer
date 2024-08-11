@@ -23,7 +23,7 @@ else
 fi
 
 # Define folders based on the determined path
-toolsFolder="$scriptsFolder/Scripts/Tools"
+toolsFolder="$scriptsFolder/Scripts/Tool"
 baseFolder="$scriptsFolder/Scripts/Comp/Fusion Pixel Studios"
 nmcFolder="$baseFolder/The New Macro Creator"
 filesFolder="$nmcFolder/files"
