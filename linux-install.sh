@@ -27,17 +27,17 @@ toolsFolder="$scriptsFolder/Scripts/Tool"
 baseFolder="$scriptsFolder/Scripts/Comp/Fusion Pixel Studios"
 nmcFolder="$baseFolder/The New Macro Creator"
 filesFolder="$nmcFolder/files"
-filesScriptsFolder="$nmcFolder/files/scripts"
+filesScriptsFolder="$filesFolder/scripts"
 luaModules="$scriptsFolder/Modules/Lua"
 
 # Define file download details
 fileDetails=(
-    "1K15w41DMZVRDXFA9hKRS88jMIRn7bQnS:$nmcFolder/Macro Creator.lua"
-    "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B:$nmcFolder/Change Macro Type.lua"
-    "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B:$toolsFolder/Change Macro Type.lua"
-    "1d8GPLxKMYwSZy_dnKXZi7KZUwf6sJ02E:$filesScriptsFolder/QMap QuickEdit.lua"
-    "1iLDGt7MQUxJR6G11RNXvQr-6YMMmWjXm:$luaModules/devmode.lua",
-    "1BARwV3JTfsXvHZ942My1K6UPzMZbyhkN:$luaModules/HTTP.lua"
+    "1-JYqs48z9DH18UQ8VkNcT2W_CNeik3Q-:$nmcFolder/Macro Creator.lua"
+    "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6:$nmcFolder/Change Macro Type.lua"
+    "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6:$toolsFolder/Change Macro Type.lua"
+    "1-RmJpcD4MZRucvqQ3QCqEB88xIKLDARh:$filesScriptsFolder/QMap QuickEdit.lua"
+    "1-NWtxyCgZZUwHSZiuZZWg88lp83IDDBN:$luaModules/devmode.lua"
+    "1-N8GS-5YoDJBYfjEa4YlwpUWZsCnIxxp:$luaModules/HTTP.lua"
 )
 
 # Function to ensure a folder exists
@@ -53,25 +53,26 @@ ensure_folder() {
 ensure_folder "$baseFolder"
 ensure_folder "$nmcFolder"
 ensure_folder "$filesFolder"
+ensure_folder "$filesScriptsFolder"
 ensure_folder "$scriptsFolder"
 ensure_folder "$luaModules"
 ensure_folder "$toolsFolder"
-ensure_folder "$filesScriptsFolder"
 
 # Download files
 echo "Downloading files..."
 
 for fileDetail in "${fileDetails[@]}"; do
-    fileId=$(echo "$fileDetail" | cut -d':' -f1)
     filePath=$(echo "$fileDetail" | cut -d':' -f2)
-    url="https://drive.google.com/uc?export=download&id=$fileId"
+    fileName=$(basename "$filePath")  # Extract file name from the path
+    url="https://drive.google.com/uc?export=download&id=$(echo "$fileDetail" | cut -d':' -f1)"
 
-    echo "Downloading file"
-    echo "Saving to: $filePath"
+    echo "Downloading file: $fileName"
     
     # Perform download
     curl -L "$url" -o "$filePath"
-    echo "Download completed: $filePath"
+    echo "Download completed: $fileName"
 done
 
-echo "Installation completed."
+# Output the result with the current time
+currentTime=$(date +"%I:%M:%S %p")
+echo "Finished at $currentTime"
