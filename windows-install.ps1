@@ -46,9 +46,10 @@ Ensure-Folder -folderPath $luaModules
 foreach ($file in $fileDetails) {
     $fileId = $file.ID
     $filePath = $file.Path + $file.Name
+    $fileName = $file.Name
     $url = "https://drive.google.com/uc?export=download&id=$fileId"
     
-    Write-Output "Downloading file " + $file.Name
+    Write-Output "Downloading file $fileName" 
     
     # Perform download
     Invoke-WebRequest -Uri $url -OutFile $filePath
