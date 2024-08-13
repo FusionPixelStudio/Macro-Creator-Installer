@@ -9,14 +9,14 @@ fi
 echo "Script executed with administrative privileges. Proceeding with installation."
 
 # Define paths
-toolsFolder="Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Tool"
-baseFolder="Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Comp/Fusion Pixel Studios"
+toolsFolder="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Tool"
+baseFolder="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Comp/Fusion Pixel Studios"
 nmcFolder="$baseFolder/The New Macro Creator"
 filesFolder="$nmcFolder/files"
 scriptsFolder="$filesFolder/scripts"
-luaModules="Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Modules/Lua"
+luaModules="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Modules/Lua"
 
-# Define file download details 
+# Define file download details
 fileDetails=(
     "1K15w41DMZVRDXFA9hKRS88jMIRn7bQnS,$nmcFolder/Macro Creator.lua"
     "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B,$nmcFolder/Change Macro Type.lua"
@@ -30,7 +30,7 @@ fileDetails=(
 ensure_folder() {
     local folderPath=$1
     if [ ! -d "$folderPath" ]; then
-        echo "Creating folder $folderPath"
+        echo "Creating folder: $folderPath"
         mkdir -p "$folderPath"
     fi
 }
@@ -47,16 +47,18 @@ ensure_folder "$toolsFolder"
 echo "Downloading files..."
 
 for fileDetail in "${fileDetails[@]}"; do
-    fileId=$(echo "$fileDetail" | cut -d',' -f1)
     filePath=$(echo "$fileDetail" | cut -d',' -f2)
+    fileName=$(basename "$filePath")
+    fileId=$(echo "$fileDetail" | cut -d',' -f1)
     url="https://drive.google.com/uc?export=download&id=$fileId"
 
-    echo "Downloading file"
-    echo "Saving to $filePath"
+    echo "Downloading file: $fileName"
     
     # Perform download
     curl -L "$url" -o "$filePath"
-    echo "Download completed $filePath"
+    echo "Download completed: $fileName"
 done
 
-echo "Installation completed."
+# Output the result with the current time
+currentTime=$(date +"%I:%M:%S %p")
+echo "Finished at $currentTime"
