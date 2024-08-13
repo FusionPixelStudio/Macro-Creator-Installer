@@ -48,9 +48,9 @@ foreach ($file in $fileDetails) {
     $filePath = $file.Path$file.Name
     $url = "https://drive.google.com/uc?export=download&id=$fileId"
     
-    Write-Output "Downloading file..."
+    Write-Output "Downloading file $file.Name"
     
     # Perform download
     Invoke-WebRequest -Uri $url -OutFile $filePath
-    Write-Output "Download completed: $file.Name"
+    Write-Output "Download completed"
 }
