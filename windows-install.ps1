@@ -16,12 +16,12 @@ $luaModules = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Modules
 
 # Define file download details
 $fileDetails = @(
-    @{ID = "1-JYqs48z9DH18UQ8VkNcT2W_CNeik3Q-"; Path = "$nmcFolder\", Name = "Macro Creator.lua"},
-    @{ID = "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6"; Path = "$nmcFolder\", Name = "Change Macro Type.lua"},
-    @{ID = "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6"; Path = "$toolsFolder\", Name = "Change Macro Type.lua"},
-    @{ID = "1-RmJpcD4MZRucvqQ3QCqEB88xIKLDARh"; Path = "$scriptsFolder\", Name = "QMap QuickEdit.lua"},
-    @{ID = "1-NWtxyCgZZUwHSZiuZZWg88lp83IDDBN"; Path = "$luaModules\", Name = "devmode.lua"},
-    @{ID = "1-N8GS-5YoDJBYfjEa4YlwpUWZsCnIxxp"; Path = "$luaModules\", Name = "HTTP.lua"}
+    @{ID = "1-JYqs48z9DH18UQ8VkNcT2W_CNeik3Q-"; Path = "$nmcFolder\"; Name = "Macro Creator.lua"},
+    @{ID = "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6"; Path = "$nmcFolder\"; Name = "Change Macro Type.lua"},
+    @{ID = "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6"; Path = "$toolsFolder\"; Name = "Change Macro Type.lua"},
+    @{ID = "1-RmJpcD4MZRucvqQ3QCqEB88xIKLDARh"; Path = "$scriptsFolder\"; Name = "QMap QuickEdit.lua"},
+    @{ID = "1-NWtxyCgZZUwHSZiuZZWg88lp83IDDBN"; Path = "$luaModules\"; Name = "devmode.lua"},
+    @{ID = "1-N8GS-5YoDJBYfjEa4YlwpUWZsCnIxxp"; Path = "$luaModules\"; Name = "HTTP.lua"}
 )
 
 # Function to ensure a folder exists
