@@ -55,3 +55,14 @@ foreach ($file in $fileDetails) {
     Invoke-WebRequest -Uri $url -OutFile $filePath
     Write-Output "Download completed"
 }
+# Get only the current date
+$currentDate = (Get-Date).Date
+
+# Output the result
+Write-Output $currentDate
+
+# Get only the current time
+$currentTime = Get-Date -Format "HH:mm:ss"
+
+# Output the result
+Write-Output "Finished at $currentTime"
