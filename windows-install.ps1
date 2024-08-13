@@ -55,6 +55,7 @@ foreach ($file in $fileDetails) {
     Invoke-WebRequest -Uri $url -OutFile $filePath
     Write-Output "Download completed"
 }
+
 # Get only the current date
 $currentDate = (Get-Date).Date
 
