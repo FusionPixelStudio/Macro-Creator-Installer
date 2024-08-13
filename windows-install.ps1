@@ -16,7 +16,7 @@ $luaModules = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Modules
 
 # Define file download details
 $fileDetails = @(
-    @{ID = "1-JYqs48z9DH18UQ8VkNcT2W_CNeik3Q"; Path = "$nmcFolder\Macro Creator.lua"},
+    @{ID = "1-JYqs48z9DH18UQ8VkNcT2W_CNeik3Q-"; Path = "$nmcFolder\Macro Creator.lua"},
     @{ID = "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6"; Path = "$nmcFolder\Change Macro Type.lua"},
     @{ID = "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6"; Path = "$toolsFolder\Change Macro Type.lua"},
     @{ID = "1-RmJpcD4MZRucvqQ3QCqEB88xIKLDARh"; Path = "$scriptsFolder\QMap QuickEdit.lua"},
