@@ -19,11 +19,11 @@ luaModules="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusio
 # Define file download details
 fileDetails=(
     "1-JYqs48z9DH18UQ8VkNcT2W_CNeik3Q-,$nmcFolder/Macro Creator.lua"
-    "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B,$nmcFolder/Change Macro Type.lua"
-    "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B,$toolsFolder/Change Macro Type.lua"
-    "1d8GPLxKMYwSZy_dnKXZi7KZUwf6sJ02E,$scriptsFolder/QMap QuickEdit.lua"
-    "1iLDGt7MQUxJR6G11RNXvQr-6YMMmWjXm,$luaModules/devmode.lua"
-    "1BARwV3JTfsXvHZ942My1K6UPzMZbyhkN,$luaModules/HTTP.lua"
+    "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6,$nmcFolder/Change Macro Type.lua"
+    "1-KGV-xEIaBTCdrHGmN4eTbEOAuj_fWe6,$toolsFolder/Change Macro Type.lua"
+    "1-RmJpcD4MZRucvqQ3QCqEB88xIKLDARh,$scriptsFolder/QMap QuickEdit.lua"
+    "1-NWtxyCgZZUwHSZiuZZWg88lp83IDDBN,$luaModules/devmode.lua"
+    "1-N8GS-5YoDJBYfjEa4YlwpUWZsCnIxxp,$luaModules/HTTP.lua"
 )
 
 # Function to ensure a folder exists
