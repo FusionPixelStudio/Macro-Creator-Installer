@@ -24,7 +24,7 @@ fi
 
 # Define folders based on the determined path
 toolsFolder="$scriptsFolder/Scripts/Tool"
-baseFolder="$scriptsFolder/Scripts/Comp/Fusion Pixel Studios"
+baseFolder="$scriptsFolder/Scripts/Comp/FusionPixelStudio"
 nmcFolder="$baseFolder/The New Macro Creator"
 filesFolder="$nmcFolder/files"
 filesScriptsFolder="$filesFolder/scripts"
