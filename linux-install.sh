@@ -18,7 +18,7 @@ if [ -d "$defaultPath1" ]; then
 elif [ -d "$defaultPath2" ]; then
     scriptsFolder="$defaultPath2"
 else
-    read -p "Neither $defaultPath1 nor $defaultPath2 exists. Please enter the path to your Universal DaVinci Resolve Fusion Folder: " userPath
+    read -p "Neither $defaultPath1 nor $defaultPath2 exists. Please enter the path to your Public DaVinci Resolve Fusion Folder: " userPath
     scriptsFolder="$userPath"
 fi
 
