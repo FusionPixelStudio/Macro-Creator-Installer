@@ -10,7 +10,7 @@ echo "Script executed with administrative privileges. Proceeding with installati
 
 # Define paths
 toolsFolder="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Tool"
-baseFolder="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Comp/Fusion Pixel Studios"
+baseFolder="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Comp/FusionPixelStudio"
 nmcFolder="$baseFolder/The New Macro Creator"
 filesFolder="$nmcFolder/files"
 scriptsFolder="$filesFolder/scripts"
