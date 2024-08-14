@@ -8,7 +8,7 @@ Write-Host "Script executed with administrative privileges. Proceeding with inst
 
 # Define paths
 $toolsFolder = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Tool"
-$baseFolder = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Comp\Fusion Pixel Studios"
+$baseFolder = "$env:ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Scripts\Comp\FusionPixelStudio"
 $nmcFolder = "$baseFolder\The New Macro Creator"
 $filesFolder = "$nmcFolder\files"
 $scriptsFolder = "$filesFolder\scripts"
