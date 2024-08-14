@@ -18,7 +18,7 @@ luaModules="/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusio
 
 # Define file download details
 fileDetails=(
-    "1K15w41DMZVRDXFA9hKRS88jMIRn7bQnS,$nmcFolder/Macro Creator.lua"
+    "1-JYqs48z9DH18UQ8VkNcT2W_CNeik3Q-,$nmcFolder/Macro Creator.lua"
     "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B,$nmcFolder/Change Macro Type.lua"
     "1_Igs1M4N5GAi9QUoy2Fa7cvFfvLSTe5B,$toolsFolder/Change Macro Type.lua"
     "1d8GPLxKMYwSZy_dnKXZi7KZUwf6sJ02E,$scriptsFolder/QMap QuickEdit.lua"
